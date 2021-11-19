@@ -20,6 +20,7 @@ novaLista.addEventListener('submit', function(event) {
        inputTitulo.value = ''
        listas.push(newLista)
        window.localStorage.listas = JSON.stringify(listas)
+       renderList()
     }
 })
 
@@ -52,6 +53,7 @@ function renderList () {
        divTag.appendChild(h2Tag)
        // add a div.card-lista a div que contem todas as listas na tela
        divListas.appendChild(divTag)
+       console.log(divTag)
     })
 }
 
